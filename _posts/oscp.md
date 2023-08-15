@@ -13,7 +13,8 @@ ldapsearch -H ldap://10.10.10.192 -x -b "DC=BLACKFIELD,DC=local"
 
 Advance:
 
-ldapsearch -H ldap://10.10.10.192 -D cn=support,dc=blackfield,dc=local -w '#00^BlackKnight' -x -b 'dc=blackfield,dc=local' (With Cred)
+ldapsearch -H ldap://10.10.10.192 -D cn=support,dc=blackfield,dc=local -w '#00^BlackKnight' -x -b 'dc=blackfield,dc=local'
+ldapsearch -H ldap://10.10.10.192 -b "DC=BLACKFIELD,DC=local" -D 'support@blackfield.local' -w '#00^BlackKnight' > support_ldap_dump (With Cred)
 
 ldapsearch -H ldap://hope.windcorp.htb -b "DC=WINDCORP,DC=HTB" sAMAccountName "CN=Users,DC=windcorp,DC=HTB" | grep sAMAccountName | awk '{print $2}' > domainusers (Domain Users Enum)
 

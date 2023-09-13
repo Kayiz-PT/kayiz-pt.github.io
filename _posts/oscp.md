@@ -45,6 +45,7 @@ smbmap -H 10.10.10.161
 smbmap -H 10.10.10.161 -u ''
 smbmap -H 10.10.10.161 -u 'null'
 smbmap -H 10.10.10.161 -u svc-alfresco -p s3rvice -R IPC$
+smbmap -H 10.10.10.100 -d active.htb -u SVC_TGS -p GPPstillStandingStrong2k18
 
 Login:
 smbclient \\\\10.10.10.161\\IPC$ -U 'svc-alfresco%s3rvice'

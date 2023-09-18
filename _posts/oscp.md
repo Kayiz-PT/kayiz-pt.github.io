@@ -1,5 +1,6 @@
 # OSCP Note
 
+### If u dont see the flag in User Desktop on Windows just use `gci -force`
 
 ## DNS Enum:
 ```

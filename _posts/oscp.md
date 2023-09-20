@@ -274,3 +274,9 @@ Get-ADComputer DC01 -property 'ms-mcs-admpwd'
 **Ad Recycle Bin**
 Get-ADObject -filter 'isdeleted -eq $true -and name -ne "Deleted Objects"' -includeDeletedObjects -property *
 ```
+
+## SSH create
+When we must need a full shell to exploit some thing and the ssh dont support some crypto type we can use this to make a key
+```
+ssh-keygen -q -t rsa -N '' -C 'pam'
+```

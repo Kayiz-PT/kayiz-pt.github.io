@@ -5,6 +5,7 @@
 ## DNS Enum:
 ```
 dig  @10.10.10.161 htb.local
+dig @10.13.37.10 -x 10.13.37.10
 => Asign: dig  @10.10.10.161 forest.htb.local
 ```
 ## Ldap Enum:

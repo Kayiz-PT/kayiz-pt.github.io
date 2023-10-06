@@ -1,0 +1,60 @@
+# Nmap 7.94 scan initiated Fri Oct  6 06:33:51 2023 as: nmap -p- -A -oA Sta3 192.168.119.112
+Nmap scan report for 192.168.119.112
+Host is up (0.26s latency).
+Not shown: 65529 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+21/tcp   open  ftp           FileZilla ftpd 0.9.41 beta
+| ftp-syst: 
+|_  SYST: UNIX emulated by FileZilla
+80/tcp   open  http          Apache httpd 2.4.53 ((Win64) OpenSSL/1.1.1n PHP/7.4.29)
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-server-header: Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/7.4.29
+|_http-title: Shoppr
+81/tcp   open  http          Apache httpd 2.4.53 ((Win64) OpenSSL/1.1.1n PHP/7.4.29)
+|_http-server-header: Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/7.4.29
+|_http-generator: WordPress 6.0
+443/tcp  open  ssl/http      Apache httpd 2.4.53 (OpenSSL/1.1.1n PHP/7.4.29)
+| ssl-cert: Subject: commonName=localhost
+| Not valid before: 2009-11-10T23:48:47
+|_Not valid after:  2019-11-08T23:48:47
+| tls-alpn: 
+|_  http/1.1
+|_http-server-header: Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/7.4.29
+|_ssl-date: TLS randomness does not represent time
+|_http-title: 400 Bad Request
+3306/tcp open  mysql         MariaDB (unauthorized)
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: OSCP
+|   NetBIOS_Domain_Name: OSCP
+|   NetBIOS_Computer_Name: OSCP
+|   DNS_Domain_Name: OSCP
+|   DNS_Computer_Name: OSCP
+|   Product_Version: 10.0.19041
+|_  System_Time: 2023-10-06T10:44:49+00:00
+|_ssl-date: 2023-10-06T10:45:03+00:00; +3s from scanner time.
+| ssl-cert: Subject: commonName=OSCP
+| Not valid before: 2023-10-04T21:19:15
+|_Not valid after:  2024-04-04T21:19:15
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows XP (85%)
+OS CPE: cpe:/o:microsoft:windows_xp::sp3
+Aggressive OS guesses: Microsoft Windows XP SP3 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: Host: www.example.com; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 2s, deviation: 0s, median: 2s
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT       ADDRESS
+1   250.35 ms 192.168.49.1
+2   250.61 ms 192.168.119.112
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Oct  6 06:45:05 2023 -- 1 IP address (1 host up) scanned in 673.98 seconds
